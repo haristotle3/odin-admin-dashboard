@@ -141,6 +141,12 @@ body {
 .sidebar {
   display: grid;
   grid-template-rows: 1fr 2fr 5fr;
+  background-color: #1992d4;
+  color: white;
+}
+
+.sidebar img[src$=".svg"] {
+    filter: brightness(0) invert(1);
 }
 
 .sidebar .img-logo-title {
@@ -154,6 +160,10 @@ body {
   height: 50px;
   width: auto;
   justify-self: end;
+}
+
+.sidebar .navigation ul {
+    list-style-type: none;
 }
 
 .sidebar div:nth-last-child(1),
