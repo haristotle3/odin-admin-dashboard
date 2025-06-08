@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "GoogleSans-Regular";
+    src: url("./GoogleSans-Regular.ttf");
+}
+
+* {
+    font-family: "GoogleSans-Regular";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+
+    display: grid;
+    gap: 8px;
+    padding: 8px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1.5fr 5fr;
+}
+
+.sidebar, .header, .main {
+    background-color: pink;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+}
