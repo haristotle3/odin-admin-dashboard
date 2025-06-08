@@ -34,6 +34,7 @@ body {
   grid-template-columns: 6fr 4fr;
 
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .header-child {
@@ -96,6 +97,45 @@ body {
     height: 80px;
     width: auto;
     border-radius: 50%;
+}
+
+.header-child.introduction {
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+}
+
+.header-child.introduction .pfp {
+    justify-self: center;    
+}
+
+.header-child.introduction .pfp img[src="assets/bear.jpg"] {
+    height: 90px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.header-child.introduction .greeting {
+    justify-self: start;
+}
+
+.header-child.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.header-child.buttons button{
+    justify-self: center;
+
+    width: 75%;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #1992d4;
 }
 
 .sidebar {
