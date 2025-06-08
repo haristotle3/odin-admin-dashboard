@@ -38,26 +38,28 @@ body {
 
 .header-child {
   display: grid;
-  grid-template-columns: 1fr 8.5fr;
-  grid-template-rows: 1fr;
-
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
 }
 
-.header-child label {
+.header-child.search-bar {
+  grid-template-columns: 1fr 8.5fr;
+  grid-template-rows: 1fr;
+}
+
+.header-child.search-bar label {
   display: grid;
 }
 
-.header-child label img {
+.header-child.search-bar label img {
   height: 45px;
   margin: 0px 8px;
   width: auto;
   justify-self: end;
 }
 
-.header-child input {
+.header-child.search-bar input {
   border: none;
   outline: none;
   background-color: #e2e8f0;
@@ -68,6 +70,32 @@ body {
 
   padding: 8px 16px;
   justify-self: end;
+}
+
+.header-child.notif-pfp-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    justify-content: center;
+}
+
+.header-child.notif-pfp-name .name {
+    justify-self: center;
+}
+
+.header-child.notif-pfp-name .bell-icon,
+.header-child.notif-pfp-name .pfp {
+    justify-self: end;
+}
+
+.header-child.notif-pfp-name img {
+    height: 40px;
+    width: auto;
+}
+
+.header-child.notif-pfp-name img[src="assets/bear.jpg"] {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .sidebar {
