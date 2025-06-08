@@ -24,6 +24,21 @@ body {
     background-color: pink;
 }
 
+.header {
+    display: grid;
+    gap: 8px;
+    padding: 8px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 6fr 4fr;
+}
+
+.header-child {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+
 .sidebar {
     grid-row: 1 / 3;
 }
