@@ -146,7 +146,9 @@ body {
 }
 
 .sidebar img[src$=".svg"] {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  height: 30px;
+  width: auto;
 }
 
 .sidebar .img-logo-title {
@@ -162,18 +164,31 @@ body {
   justify-self: end;
 }
 
-.sidebar .navigation ul {
-    list-style-type: none;
+.sidebar .navigation ul,
+.sidebar .utils ul {
+  list-style-type: none;
+}
+
+.sidebar .navigation ul li,
+.sidebar .utils ul li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.sidebar .navigation,
+.sidebar .utils {
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
 }
 
 .sidebar div:nth-last-child(1),
 .sidebar div:nth-last-child(2) {
   padding: 20px 0px;
-}
-
-.sidebar .navigation,
-.sidebar .utils {
-  font-size: 30px;
 }
 
 .sidebar {
