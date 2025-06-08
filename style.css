@@ -74,68 +74,96 @@ body {
 }
 
 .header-child.notif-pfp-name {
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  justify-content: center;
 }
 
 .header-child.notif-pfp-name .name {
-    justify-self: center;
+  justify-self: center;
 }
 
 .header-child.notif-pfp-name .bell-icon,
 .header-child.notif-pfp-name .pfp {
-    justify-self: end;
+  justify-self: end;
 }
 
 .header-child.notif-pfp-name img {
-    height: 40px;
-    width: auto;
+  height: 40px;
+  width: auto;
 }
 
 .header-child.notif-pfp-name img[src="assets/bear.jpg"] {
-    height: 80px;
-    width: auto;
-    border-radius: 50%;
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
 }
 
 .header-child.introduction {
-    display: grid;
-    grid-template-columns: 2fr 9fr;
+  display: grid;
+  grid-template-columns: 2fr 9fr;
 }
 
 .header-child.introduction .pfp {
-    justify-self: center;    
+  justify-self: center;
 }
 
 .header-child.introduction .pfp img[src="assets/bear.jpg"] {
-    height: 90px;
-    width: auto;
-    border-radius: 50%;
+  height: 90px;
+  width: auto;
+  border-radius: 50%;
 }
 
 .header-child.introduction .greeting {
-    justify-self: start;
+  justify-self: start;
 }
 
 .header-child.buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
 }
 
-.header-child.buttons button{
-    justify-self: center;
+.header-child.buttons button {
+  justify-self: center;
 
-    width: 75%;
-    height: 40px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    color: white;
-    font-weight: bold;
-    background-color: #1992d4;
+  width: 75%;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #1992d4;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 2fr 5fr;
+}
+
+.sidebar .img-logo-title {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .img-logo-title img {
+  height: 50px;
+  width: auto;
+  justify-self: end;
+}
+
+.sidebar div:nth-last-child(1),
+.sidebar div:nth-last-child(2) {
+  padding: 20px 0px;
+}
+
+.sidebar .navigation,
+.sidebar .utils {
+  font-size: 30px;
 }
 
 .sidebar {
