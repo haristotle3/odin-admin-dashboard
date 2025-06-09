@@ -200,7 +200,7 @@ body {
   align-items: center;
   padding: 24px 24px;
   background-color: #e2e8f0;
-  grid-template-rows: 5% 95%;
+  grid-template-rows: 5fr 95fr;
   box-shadow: 0 4px 8px 0 #e2e8f0 inset;
 }
 
@@ -225,18 +225,17 @@ body {
 
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-.main .left-col .your-projects .project-card .symbols{
+.main .left-col .your-projects .project-card .symbols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-self: end;
   gap: 20px;
 }
 
-
-.main .left-col .your-projects .project-card img{
+.main .left-col .your-projects .project-card img {
   height: 30px;
   width: auto;
 }
@@ -245,3 +244,42 @@ body {
   cursor: pointer;
 }
 
+.main .right-col {
+  display: grid;
+  align-items: center;
+  padding: 24px 24px;
+  grid-template-rows: 6fr 47.5fr 6fr 47.5fr;
+
+  background-color: #e2e8f0;
+  gap: 4px;
+}
+
+.main .right-col .announcements-container,
+.main .right-col .trending {
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.main .right-col .announcements-container {
+  font-size: 16px;
+  display: grid;
+  gap: 6px;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.main .right-col .announcements-container .announcement {
+  padding-top: 8px;
+}
+
+.main .right-col .announcements-container .announcement:not(:first-child) {
+  border-top: 2px solid rgb(0, 0, 0, 0.2);
+}
+
+
+.main .right-col .announcements-container .announcement p {
+  color: rgb(0, 0, 0, 0.6);
+}
