@@ -289,6 +289,7 @@ body {
   font-size: 16px;
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 24px;
 }
 
 .main .right-col .trending .profile-container {
