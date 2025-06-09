@@ -229,7 +229,10 @@ body {
 
 
 .main .left-col .your-projects .project-card .symbols{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-self: end;
+  gap: 20px;
 }
 
 
