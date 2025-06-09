@@ -280,6 +280,25 @@ body {
 }
 
 
-.main .right-col .announcements-container .announcement p {
+.main .right-col .announcements-container .announcement p,
+.main .right-col .trending .profile-container p {
   color: rgb(0, 0, 0, 0.6);
+}
+
+.main .right-col .trending {
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.main .right-col .trending .profile-container {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  align-items: center;
+}
+
+.main .right-col .trending .profile-container img {
+  height: 55px;
+  width: auto;
+  border-radius: 50%;
 }
